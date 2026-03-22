@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Undangan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="music" autoplay loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<section class="slide show" style="background-image: url('back-1.png');"></section>
+
+<section class="slide hidden-right" style="background-image: url('back-2.png');"></section>
+
+<section class="slide hidden-left" style="background-image: url('back-3.png');">
+
+  <div class="overlay">
+    <div class="countdown-box">
+      <div id="countdown">
+        <div class="cd-item" id="cd-hari"></div>
+        <div class="cd-item" id="cd-jam"></div>
+        <div class="cd-item" id="cd-menit"></div>
+        <div class="cd-item" id="cd-detik"></div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
