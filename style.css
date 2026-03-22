@@ -14,7 +14,7 @@ body {
 /* tombol awal */
 button {
   position: absolute;
-  bottom: 750px;
+  bottom: 500px;
   left: 50%;
   transform: translateX(-50%);
   padding: 40px 100px;
@@ -33,7 +33,7 @@ button {
 }
 
 #countdown {
-  font-size: 55x;
+  font-size: 55px;
   font-weight: bold;
   color: #D3D3D3;
   text-shadow: 0 0 5px black;
