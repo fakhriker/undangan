@@ -1,17 +1,51 @@
 body {
   margin: 0;
   font-family: sans-serif;
-  overflow-x: hidden;
 }
 
+/* OPENING */
+.opening {
+  height: 100vh;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.open-container button {
+  padding: 15px 30px;
+  background: gold;
+  border: none;
+}
+
+/* SLIDE */
 .slide {
   height: 100vh;
   background-size: cover;
   background-position: center;
-  position: relative;
+  opacity: 0;
+  transition: all 1s ease;
 }
 
-/* POSISI COUNTDOWN */
+.slide.show {
+  opacity: 1;
+}
+
+.hidden-right {
+  transform: translateX(100px);
+}
+
+.hidden-left {
+  transform: translateX(-100px);
+}
+
+.slide.show.hidden-right,
+.slide.show.hidden-left {
+  transform: translateX(0);
+}
+
+/* COUNTDOWN */
 .overlay {
   position: absolute;
   bottom: 750px;
@@ -20,55 +54,16 @@ body {
   justify-content: center;
 }
 
-/* BOX COUNTDOWN */
 .countdown-box {
-  position: relative;
   padding: 48px 62px;
   border: 2px solid gold;
-  overflow: hidden;
   background: white;
+  text-align: center;
 }
 
-/* TEKS */
-#countdown {
-  position: relative;
-  z-index: 2;
+.cd-item {
+  display: none;
   font-size: 55px;
   font-weight: bold;
   color: black;
-}
-
-/* ANIMASI WARNA BACKGROUND */
-.countdown-box::before {
-  content: "";
-  position: absolute;
-  top: -100%;
-  left: -100%;
-  width: 300%;
-  height: 300%;
-  transform: rotate(25deg);
-  animation: swipeBg 4s infinite;
-  z-index: 1;
-}
-
-/* ANIMASI SWIPE BACKGROUND */
-@keyframes swipeBg {
-  0%   { background: white; transform: translateX(-100%) rotate(25deg); }
-  25%  { background: yellow; transform: translateX(0%) rotate(25deg); }
-  50%  { background: gold; transform: translateX(100%) rotate(25deg); }
-  75%  { background: gray; transform: translateX(200%) rotate(25deg); }
-  100% { background: white; transform: translateX(300%) rotate(25deg); }
-}
-
-/* ANIMASI TEKS */
-@keyframes textColor {
-  0%   { color: black; }
-  25%  { color: black; }
-  50%  { color: black; }
-  75%  { color: white; }
-  100% { color: black; }
-}
-
-#countdown {
-  animation: textColor 4s infinite;
 }
