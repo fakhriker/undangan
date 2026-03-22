@@ -7,15 +7,13 @@
 </head>
 <body>
 
-<!-- Musik -->
-<audio id="music" loop>
+<!-- Musik Auto -->
+<audio autoplay loop>
   <source src="music.mp3" type="audio/mpeg">
 </audio>
 
 <!-- SLIDE 1 -->
-<section class="slide" style="background-image: url('back-1.png');">
-  <button onclick="start()">Buka Undangan</button>
-</section>
+<section class="slide" style="background-image: url('back-1.png');"></section>
 
 <!-- SLIDE 2 -->
 <section class="slide" style="background-image: url('back-2.png');"></section>
@@ -23,13 +21,14 @@
 <!-- SLIDE 3 -->
 <section class="slide" style="background-image: url('back-3.png');">
 
-  <!-- OVERLAY COUNTDOWN -->
   <div class="overlay">
-    <div id="countdown">
-      <span id="hari"></span> Hari<br>
-      <span id="jam"></span> Jam<br>
-      <span id="menit"></span> Menit<br>
-      <span id="detik"></span> Detik
+    <div class="countdown-box">
+      <div id="countdown">
+        <span id="hari"></span> Hari<br>
+        <span id="jam"></span> Jam<br>
+        <span id="menit"></span> Menit<br>
+        <span id="detik"></span> Detik
+      </div>
     </div>
   </div>
 
