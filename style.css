@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+.slide {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* tombol awal */
+button {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px 30px;
+  background: gold;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* overlay countdown */
+.overlay {
+  position: absolute;
+  bottom: 120px; /* SESUAIKAN posisi */
+  width: 100%;
+  text-align: center;
+}
+
+#countdown {
+  font-size: 22px;
+  font-weight: bold;
+  color: gold;
+  text-shadow: 0 0 5px black;
+}
