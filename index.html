@@ -2,38 +2,21 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Undangan Fakhri</title>
+  <title>Buka Undangan</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="opening">
 
-<!-- Musik Auto -->
-<audio autoplay loop>
-  <source src="music.mp3" type="audio/mpeg">
-</audio>
-
-<!-- SLIDE 1 -->
-<section class="slide" style="background-image: url('back-1.png');"></section>
-
-<!-- SLIDE 2 -->
-<section class="slide" style="background-image: url('back-2.png');"></section>
-
-<!-- SLIDE 3 -->
-<section class="slide" style="background-image: url('back-3.png');">
-
-  <div class="overlay">
-    <div class="countdown-box">
-      <div id="countdown">
-        <span id="hari"></span> Hari<br>
-        <span id="jam"></span> Jam<br>
-        <span id="menit"></span> Menit<br>
-        <span id="detik"></span> Detik
-      </div>
-    </div>
+  <div class="open-container">
+    <h1>Undangan</h1>
+    <button onclick="buka()">Klik Disini</button>
   </div>
 
-</section>
+  <script>
+    function buka() {
+      window.location.href = "undangan.html";
+    }
+  </script>
 
-<script src="script.js"></script>
 </body>
 </html>
