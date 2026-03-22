@@ -27,7 +27,7 @@ button {
 /* overlay countdown */
 .overlay {
   position: absolute;
-  bottom: 500px; /* SESUAIKAN posisi */
+  bottom: 750px; /* SESUAIKAN posisi */
   width: 100%;
   text-align: center;
 }
